@@ -43,5 +43,42 @@ struct MatchedGeometryEffectScreen: View {
 }
 
 #Preview {
-    MatchedGeometryEffectScreen()
+    MatchedGeometryEffectExample2()
+}
+
+
+struct MatchedGeometryEffectExample2 : View {
+    
+    private let categories: [String] = ["Home", "Popular","Saved"]
+    
+    @State private var selcted : String = ""
+    
+    @Namespace private var nameSpace
+    
+    var body: some View {
+        HStack {
+            ForEach(categories, id: \.self) { category in
+                ZStack(alignment: .bottom) {
+                    if category == selcted {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.red.opacity(0.3))
+                            .matchedGeometryEffect(id: "category_background", in: nameSpace)
+                            .frame(width: 35, height: 2)
+                            .offset(y: 10)
+                    }
+                    
+                    Text(category)
+                        .foregroundColor(selcted == category ? Color.red : Color.black)
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 55)
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        selcted = category
+                    }
+                }
+            }
+        }
+        .padding()
+    }
 }
