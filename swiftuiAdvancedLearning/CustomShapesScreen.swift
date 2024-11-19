@@ -18,10 +18,23 @@ struct Triangle: Shape {
     }
 }
 
+struct Diamond : Shape {
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            let horisontalOffset: CGFloat = rect.width * 0.2
+            path.move(to: CGPoint(x: rect.midX, y: rect.minY))
+            path.addLine(to: CGPoint(x: rect.maxX - horisontalOffset, y: rect.midY))
+            path.addLine(to: CGPoint(x: rect.midX, y: rect.maxY))
+            path.addLine(to: CGPoint(x: rect.minX + horisontalOffset, y: rect.midY))
+            path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
+        }
+    }
+}
+
 struct CustomShapesScreen: View {
     var body: some View {
         ZStack {
-            Triangle()
+            Diamond()
                 .stroke(style: StrokeStyle(lineWidth: 5, dash: [10]))
                 .foregroundColor(.blue)
                 .frame(width: 300, height: 300)
