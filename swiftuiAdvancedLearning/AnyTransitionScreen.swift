@@ -35,6 +35,14 @@ extension AnyTransition {
             identity: RotateViewModifier(degrees: 0)
         )
     }
+    
+    static var rotateOn: AnyTransition {
+        return AnyTransition.asymmetric(
+            insertion: rotating,
+            removal: .move(edge: .leading)
+        )
+    }
+    
 }
 
 struct AnyTransitionScreen: View {
@@ -50,7 +58,7 @@ struct AnyTransitionScreen: View {
                 RoundedRectangle(cornerRadius: 25)
                     .frame(width: 250, height: 350)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .transition(.rotating(degree: 180))
+                    .transition(.rotateOn)
             }
             
             
