@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */; };
+		FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */; };
 		FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC9E902CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift */; };
 		FAFC9E952CEB4E8D0032D9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFC9E942CEB4E8D0032D9E1 /* Assets.xcassets */; };
 		FAFC9E982CEB4E8D0032D9E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFC9E972CEB4E8D0032D9E1 /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionScreen.swift; sourceTree = "<group>"; };
+		FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectScreen.swift; sourceTree = "<group>"; };
 		FAFC9E8D2CEB4E8C0032D9E1 /* swiftuiAdvancedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuiAdvancedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFC9E902CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuiAdvancedLearningApp.swift; sourceTree = "<group>"; };
 		FAFC9E942CEB4E8D0032D9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				FAFC9E902CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift */,
 				FAFC9EA02CEB56930032D9E1 /* ButtonStyleScreen.swift */,
+				FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */,
 				FAFC9E9E2CEB4F3A0032D9E1 /* ViewModifierScreen.swift */,
 				FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */,
 				FAFC9E942CEB4E8D0032D9E1 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFC9E9F2CEB4F3A0032D9E1 /* ViewModifierScreen.swift in Sources */,
+				FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */,
 				FAFC9EA12CEB56930032D9E1 /* ButtonStyleScreen.swift in Sources */,
 				FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */,
 				FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */,
