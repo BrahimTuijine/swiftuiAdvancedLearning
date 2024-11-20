@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomCurveScreen: View {
     var body: some View {
-        ShapeWithArc()
+        QuadSimple()
 //            .stroke(style: StrokeStyle(lineWidth: 5))
             .frame(width: 200, height: 200)
     }
@@ -17,6 +17,18 @@ struct CustomCurveScreen: View {
 
 #Preview {
     CustomCurveScreen()
+}
+
+struct QuadSimple : Shape {
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            path.move(to: .zero)
+            path.addQuadCurve(
+                to: CGPoint(x: rect.midX,y: rect.midY),
+                control: CGPoint(x: rect.minX, y: rect.maxY)
+            )
+        }
+    }
 }
 
 struct ShapeWithArc : Shape {
