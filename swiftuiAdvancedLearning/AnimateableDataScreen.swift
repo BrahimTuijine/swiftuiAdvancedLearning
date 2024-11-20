@@ -13,11 +13,13 @@ struct AnimateableDataScreen: View {
     
     var body: some View {
         ZStack {
-            RectangleWithSingleCorner(cornerRaduis: animate ? 60 : 0)
+//            RectangleWithSingleCorner(cornerRaduis: animate ? 60 : 0)
+            Packman(offsetAmount: animate ? 20 : 0)
+                .fill(Color.yellow)
                 .frame(width: 300, height: 300)
         }
         .onAppear {
-            withAnimation(.linear(duration: 2).repeatForever()) {
+            withAnimation(.easeInOut.repeatForever()) {
                 animate.toggle()
             }
         }
@@ -55,4 +57,27 @@ struct RectangleWithSingleCorner : Shape {
 
 #Preview {
     AnimateableDataScreen()
+}
+
+
+struct Packman : Shape {
+    
+    var offsetAmount : CGFloat
+    
+    var animatableData: CGFloat {
+        get { offsetAmount }
+        set { offsetAmount = newValue }
+    }
+    
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            path.move(to: CGPoint(x: rect.midX, y: rect.midY))
+            path.addArc(
+                center: CGPoint(x: rect.midX, y: rect.midY),
+                radius: rect.width / 2 ,
+                startAngle: .degrees(offsetAmount),
+                endAngle: .degrees(360 - offsetAmount),
+                clockwise: false)
+        }
+    }
 }

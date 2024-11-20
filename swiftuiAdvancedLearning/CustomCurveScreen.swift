@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomCurveScreen: View {
     var body: some View {
-        WaterShape()
+        ArcSimple()
             .fill(
                 LinearGradient(
                     gradient: Gradient(colors: [Color.blue, Color.blue]),
@@ -18,7 +18,7 @@ struct CustomCurveScreen: View {
             )
             .ignoresSafeArea()
 //            .stroke(style: StrokeStyle(lineWidth: 5))
-//            .frame(width: 200, height: 200)
+            .frame(width: 200, height: 200)
     }
 }
 
