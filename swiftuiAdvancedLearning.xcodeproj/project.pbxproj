@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA1BE1722CEF383200BAD2FE /* ViewBuilderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */; };
 		FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */; };
+		FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */; };
 		FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */; };
 		FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */; };
 		FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderScreen.swift; sourceTree = "<group>"; };
 		FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyScreen.swift; sourceTree = "<group>"; };
+		FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyScreen.swift; sourceTree = "<group>"; };
 		FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionScreen.swift; sourceTree = "<group>"; };
 		FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectScreen.swift; sourceTree = "<group>"; };
 		FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesScreen.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */,
+				FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */,
 			);
 			path = PreferenceKeyScreens;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */,
 				FAFC9EA12CEB56930032D9E1 /* ButtonStyleScreen.swift in Sources */,
 				FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */,
+				FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */,
 				FA1BE1722CEF383200BAD2FE /* ViewBuilderScreen.swift in Sources */,
 				FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */,
 				FAF0C96D2CEDD1E7007ECB28 /* CustomCurveScreen.swift in Sources */,
