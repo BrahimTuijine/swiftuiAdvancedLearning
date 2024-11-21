@@ -13,6 +13,7 @@
 		FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */; };
 		FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */; };
 		FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */; };
+		FAE491B62CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE491B52CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift */; };
 		FAF0C96D2CEDD1E7007ECB28 /* CustomCurveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C96C2CEDD1E7007ECB28 /* CustomCurveScreen.swift */; };
 		FAF0C96F2CEDEE26007ECB28 /* AnimateableDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */; };
 		FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC9E902CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift */; };
@@ -29,6 +30,7 @@
 		FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionScreen.swift; sourceTree = "<group>"; };
 		FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectScreen.swift; sourceTree = "<group>"; };
 		FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesScreen.swift; sourceTree = "<group>"; };
+		FAE491B52CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPreferenceKeyScreen.swift; sourceTree = "<group>"; };
 		FAF0C96C2CEDD1E7007ECB28 /* CustomCurveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveScreen.swift; sourceTree = "<group>"; };
 		FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateableDataScreen.swift; sourceTree = "<group>"; };
 		FAFC9E8D2CEB4E8C0032D9E1 /* swiftuiAdvancedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuiAdvancedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 			children = (
 				FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */,
 				FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */,
+				FAE491B52CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift */,
 			);
 			path = PreferenceKeyScreens;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE491B62CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift in Sources */,
 				FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */,
 				FAFC9E9F2CEB4F3A0032D9E1 /* ViewModifierScreen.swift in Sources */,
 				FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */,
