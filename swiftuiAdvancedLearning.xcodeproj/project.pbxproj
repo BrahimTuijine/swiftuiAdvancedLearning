@@ -13,6 +13,9 @@
 		FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */; };
 		FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */; };
 		FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */; };
+		FA7273212CF08E38007FE28B /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273202CF08E38007FE28B /* AppTabBarView.swift */; };
+		FA7273232CF08FC4007FE28B /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */; };
+		FA7273252CF0D493007FE28B /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */; };
 		FAE491B62CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE491B52CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift */; };
 		FAF0C96D2CEDD1E7007ECB28 /* CustomCurveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C96C2CEDD1E7007ECB28 /* CustomCurveScreen.swift */; };
 		FAF0C96F2CEDEE26007ECB28 /* AnimateableDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */; };
@@ -30,6 +33,9 @@
 		FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionScreen.swift; sourceTree = "<group>"; };
 		FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectScreen.swift; sourceTree = "<group>"; };
 		FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesScreen.swift; sourceTree = "<group>"; };
+		FA7273202CF08E38007FE28B /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
+		FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		FAE491B52CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPreferenceKeyScreen.swift; sourceTree = "<group>"; };
 		FAF0C96C2CEDD1E7007ECB28 /* CustomCurveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveScreen.swift; sourceTree = "<group>"; };
 		FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateableDataScreen.swift; sourceTree = "<group>"; };
@@ -62,6 +68,16 @@
 			path = PreferenceKeyScreens;
 			sourceTree = "<group>";
 		};
+		FA72731F2CF08E0C007FE28B /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA7273202CF08E38007FE28B /* AppTabBarView.swift */,
+				FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */,
+				FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
 		FAFC9E842CEB4E8C0032D9E1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,7 @@
 				FAFC9EA02CEB56930032D9E1 /* ButtonStyleScreen.swift */,
 				FAF0C96C2CEDD1E7007ECB28 /* CustomCurveScreen.swift */,
 				FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */,
+				FA72731F2CF08E0C007FE28B /* CustomTabBar */,
 				FA1BE1752CEF839200BAD2FE /* PreferenceKeyScreens */,
 				FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */,
 				FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */,
@@ -175,12 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7273212CF08E38007FE28B /* AppTabBarView.swift in Sources */,
 				FAE491B62CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift in Sources */,
 				FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */,
 				FAFC9E9F2CEB4F3A0032D9E1 /* ViewModifierScreen.swift in Sources */,
+				FA7273252CF0D493007FE28B /* CustomTabBarContainerView.swift in Sources */,
 				FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */,
 				FAF0C96F2CEDEE26007ECB28 /* AnimateableDataScreen.swift in Sources */,
 				FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */,
+				FA7273232CF08FC4007FE28B /* CustomTabBarView.swift in Sources */,
 				FAFC9EA12CEB56930032D9E1 /* ButtonStyleScreen.swift in Sources */,
 				FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */,
 				FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */,
