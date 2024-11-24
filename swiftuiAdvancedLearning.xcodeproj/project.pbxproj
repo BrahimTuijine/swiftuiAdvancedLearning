@@ -16,7 +16,9 @@
 		FA7273212CF08E38007FE28B /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273202CF08E38007FE28B /* AppTabBarView.swift */; };
 		FA7273232CF08FC4007FE28B /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */; };
 		FA7273252CF0D493007FE28B /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */; };
+		FA9F2F322CF297960066C44F /* TabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F2F312CF297960066C44F /* TabBarItemsPreferenceKey.swift */; };
 		FAE491B62CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE491B52CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift */; };
+		FAEEC7722CF3700D00167F64 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEEC7712CF3700D00167F64 /* TabBarItem.swift */; };
 		FAF0C96D2CEDD1E7007ECB28 /* CustomCurveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C96C2CEDD1E7007ECB28 /* CustomCurveScreen.swift */; };
 		FAF0C96F2CEDEE26007ECB28 /* AnimateableDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */; };
 		FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC9E902CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift */; };
@@ -36,7 +38,9 @@
 		FA7273202CF08E38007FE28B /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		FA9F2F312CF297960066C44F /* TabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
 		FAE491B52CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPreferenceKeyScreen.swift; sourceTree = "<group>"; };
+		FAEEC7712CF3700D00167F64 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		FAF0C96C2CEDD1E7007ECB28 /* CustomCurveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurveScreen.swift; sourceTree = "<group>"; };
 		FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateableDataScreen.swift; sourceTree = "<group>"; };
 		FAFC9E8D2CEB4E8C0032D9E1 /* swiftuiAdvancedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuiAdvancedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +78,8 @@
 				FA7273202CF08E38007FE28B /* AppTabBarView.swift */,
 				FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */,
 				FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */,
+				FA9F2F312CF297960066C44F /* TabBarItemsPreferenceKey.swift */,
+				FAEEC7712CF3700D00167F64 /* TabBarItem.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */,
 				FAF0C96F2CEDEE26007ECB28 /* AnimateableDataScreen.swift in Sources */,
 				FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */,
+				FAEEC7722CF3700D00167F64 /* TabBarItem.swift in Sources */,
 				FA7273232CF08FC4007FE28B /* CustomTabBarView.swift in Sources */,
 				FAFC9EA12CEB56930032D9E1 /* ButtonStyleScreen.swift in Sources */,
 				FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */,
@@ -207,6 +214,7 @@
 				FA1BE1722CEF383200BAD2FE /* ViewBuilderScreen.swift in Sources */,
 				FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */,
 				FAF0C96D2CEDD1E7007ECB28 /* CustomCurveScreen.swift in Sources */,
+				FA9F2F322CF297960066C44F /* TabBarItemsPreferenceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

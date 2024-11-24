@@ -10,8 +10,27 @@ import SwiftUI
 struct AppTabBarView: View {
     
     @State private var selection: String = "home"
+    @State private var tabSelection: TabBarItem = .home
     
     var body: some View {
+        CustomTabBarContainerView(selection: $tabSelection) {
+            Color.red
+                .tabBarItem(item: .home, selction: $tabSelection)
+            Color.blue
+                .tabBarItem(item:  .favorites, selction: $tabSelection)
+            
+            Color.green
+                .tabBarItem(item: .profile, selction: $tabSelection)
+        }
+    }
+}
+
+#Preview {
+    AppTabBarView()
+}
+
+extension AppTabBarView {
+    private var defaultTabView : some View {
         TabView(selection: $selection) {
             Color.red
                 .tabItem {
@@ -32,8 +51,4 @@ struct AppTabBarView: View {
                 }
         }
     }
-}
-
-#Preview {
-    AppTabBarView()
 }
