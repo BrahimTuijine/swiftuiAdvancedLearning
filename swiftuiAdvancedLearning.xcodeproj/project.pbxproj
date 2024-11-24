@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				FA7273202CF08E38007FE28B /* AppTabBarView.swift */,
-				FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */,
 				FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */,
+				FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */,
 				FA9F2F312CF297960066C44F /* TabBarItemsPreferenceKey.swift */,
 				FAEEC7712CF3700D00167F64 /* TabBarItem.swift */,
 			);
