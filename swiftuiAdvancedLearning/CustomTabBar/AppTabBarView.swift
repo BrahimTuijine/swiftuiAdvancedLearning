@@ -14,9 +14,9 @@ struct AppTabBarView: View {
     
     var body: some View {
         CustomTabBarContainerView(selection: $tabSelection) {
-            Color.red
-                .tabBarItem(item: .home, selction: $tabSelection)
             Color.blue
+                .tabBarItem(item: .home, selction: $tabSelection)
+            Color.red
                 .tabBarItem(item:  .favorites, selction: $tabSelection)
             
             Color.green
