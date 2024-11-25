@@ -14,6 +14,7 @@
 		FA4511102CF46C5600843FB7 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45110F2CF46C5600843FB7 /* CustomNavBarView.swift */; };
 		FA4511122CF4708700843FB7 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4511112CF4708700843FB7 /* CustomNavBarContainerView.swift */; };
 		FA4511142CF47D0400843FB7 /* CustomNavLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4511132CF47D0400843FB7 /* CustomNavLinkView.swift */; };
+		FA4511162CF4877900843FB7 /* UIViewRepresentableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4511152CF4877900843FB7 /* UIViewRepresentableScreen.swift */; };
 		FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */; };
 		FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */; };
 		FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */; };
@@ -40,6 +41,7 @@
 		FA45110F2CF46C5600843FB7 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 		FA4511112CF4708700843FB7 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
 		FA4511132CF47D0400843FB7 /* CustomNavLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLinkView.swift; sourceTree = "<group>"; };
+		FA4511152CF4877900843FB7 /* UIViewRepresentableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableScreen.swift; sourceTree = "<group>"; };
 		FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionScreen.swift; sourceTree = "<group>"; };
 		FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectScreen.swift; sourceTree = "<group>"; };
 		FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesScreen.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				FA1BE1752CEF839200BAD2FE /* PreferenceKeyScreens */,
 				FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */,
 				FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */,
+				FA4511152CF4877900843FB7 /* UIViewRepresentableScreen.swift */,
 				FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */,
 				FAFC9E9E2CEB4F3A0032D9E1 /* ViewModifierScreen.swift */,
 				FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */,
@@ -221,6 +224,7 @@
 				FA4511142CF47D0400843FB7 /* CustomNavLinkView.swift in Sources */,
 				FA7273212CF08E38007FE28B /* AppTabBarView.swift in Sources */,
 				FA4511122CF4708700843FB7 /* CustomNavBarContainerView.swift in Sources */,
+				FA4511162CF4877900843FB7 /* UIViewRepresentableScreen.swift in Sources */,
 				FA45110E2CF466D300843FB7 /* AppNavBarScreen.swift in Sources */,
 				FAE491B62CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift in Sources */,
 				FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */,
