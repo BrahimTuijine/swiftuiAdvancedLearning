@@ -18,6 +18,7 @@
 		FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */; };
 		FA54D2A32CEC9E290099E212 /* MatchedGeometryEffectScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */; };
 		FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */; };
+		FA6095CB2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6095CA2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift */; };
 		FA7273212CF08E38007FE28B /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273202CF08E38007FE28B /* AppTabBarView.swift */; };
 		FA7273232CF08FC4007FE28B /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */; };
 		FA7273252CF0D493007FE28B /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */; };
@@ -45,6 +46,7 @@
 		FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionScreen.swift; sourceTree = "<group>"; };
 		FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectScreen.swift; sourceTree = "<group>"; };
 		FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesScreen.swift; sourceTree = "<group>"; };
+		FA6095CA2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentableScreen.swift; sourceTree = "<group>"; };
 		FA7273202CF08E38007FE28B /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		FA7273222CF08FC4007FE28B /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		FA7273242CF0D493007FE28B /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */,
 				FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */,
 				FA4511152CF4877900843FB7 /* UIViewRepresentableScreen.swift */,
+				FA6095CA2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift */,
 				FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */,
 				FAFC9E9E2CEB4F3A0032D9E1 /* ViewModifierScreen.swift */,
 				FA54D2A02CEC922F0099E212 /* AnyTransitionScreen.swift */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6095CB2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift in Sources */,
 				FA4511142CF47D0400843FB7 /* CustomNavLinkView.swift in Sources */,
 				FA7273212CF08E38007FE28B /* AppTabBarView.swift in Sources */,
 				FA4511122CF4708700843FB7 /* CustomNavBarContainerView.swift in Sources */,

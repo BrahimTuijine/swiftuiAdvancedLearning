@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// convert UIView to SwiftUI
 struct UIViewRepresentableScreen: View {
     
     @State var text: String = ""
@@ -78,7 +79,7 @@ struct UITextFieldViewRepresentable: UIViewRepresentable {
         
         @Binding var text: String
         
-        init(text: Binding<String >) {
+        init(text: Binding<String>) {
             self._text = text
         }
         
