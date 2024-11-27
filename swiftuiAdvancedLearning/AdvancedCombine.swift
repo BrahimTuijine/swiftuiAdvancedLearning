@@ -9,10 +9,16 @@ import SwiftUI
 
 class AdvancedCombineDataService {
     
-    init() {
-        
-    }
+    @Published var basicPublisher: [String] = []
     
+    init() {
+        publishFakeData()
+    }
+    private func publishFakeData() -> Void {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.basicPublisher = ["one", "two", "three"]
+        }
+    }
 }
 
 class AdvancedCombineViewModel: ObservableObject {
