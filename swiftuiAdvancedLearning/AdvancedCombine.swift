@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 class AdvancedCombineDataService {
     
@@ -25,6 +26,23 @@ class AdvancedCombineViewModel: ObservableObject {
     
     @Published var data : [String] = []
     
+    let dataService = AdvancedCombineDataService()
+    
+    var cancellables = Set<AnyCancellable>()
+    
+    init() {
+        addSubscribers()
+    }
+    
+    private func addSubscribers() -> Void {
+        dataService.$basicPublisher.sink { [weak self] value in
+            self?.data = value
+        }
+        .store(in: &cancellables)
+    }
+    
+    
+    
 }
 
 struct AdvancedCombine: View {
@@ -32,7 +50,13 @@ struct AdvancedCombine: View {
     @StateObject private var vm = AdvancedCombineViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+            List {
+                ForEach(vm.data, id: \.self) { value in
+                    Text(value)
+                }
+            }
+        
     }
 }
 
