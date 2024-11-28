@@ -45,6 +45,7 @@ class AdvancedCombineDataService {
 class AdvancedCombineViewModel: ObservableObject {
     
     @Published var data : [String] = []
+    @Published var booldata : [Bool] = []
     @Published var error: String = ""
     
     let dataService = AdvancedCombineDataService()
@@ -56,7 +57,7 @@ class AdvancedCombineViewModel: ObservableObject {
     }
     
     private func addSubscribers() -> Void {
-        dataService.passThroughPublisher
+        
             // Sequence Operations
             //.first()
             //.first(where: {$0 > 2})
@@ -142,6 +143,13 @@ class AdvancedCombineViewModel: ObservableObject {
             //})
         
         
+        let sharedPublisher = dataService.passThroughPublisher
+            .share()
+            .multicast {
+                PassthroughSubject<Int, Error>()
+            }
+            
+        sharedPublisher
             .map({ String($0) })
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
@@ -155,10 +163,30 @@ class AdvancedCombineViewModel: ObservableObject {
                 self?.data.append(value)
             })
             .store(in: &cancellables)
+        
+        sharedPublisher
+            .map({ $0 > 5 ? true : false })
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print(error.localizedDescription)
+                    self?.error = error.localizedDescription
+                }
+            },receiveValue: { [weak self] value in
+                self?.booldata.append(value)
+            })
+            .store(in: &cancellables)
+        
+            
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            sharedPublisher
+                .connect()
+                .store(in: &self.cancellables)
+        }
+        
     }
-    
-    
-    
 }
 
 struct AdvancedCombine: View {
