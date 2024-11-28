@@ -97,10 +97,18 @@ class AdvancedCombineViewModel: ObservableObject {
             //.reduce(0, +) => .scan(0, {$0 + $1} ) return one Time after finish
             //.allSatisfy({$0 < 50})
             //.allSatisfy()
+            //.collect() // transform data to array of data [data]
             
+            // Timing Operations
+            //.debounce(for: 1, scheduler: DispatchQueue.main)
+            //.delay(for: 2, scheduler: DispatchQueue.main)
+            //.measureInterval(using: DispatchQueue.main) calculate time between every value
+            //.throttle(for: 10, scheduler: DispatchQueue.main, latest: true)
+            //.retry(3)
+            //.timeout(5, scheduler: DispatchQueue.main)
+                
         
             .map({ String($0) })
-            .collect() // transform data to array of data [data]
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .finished:
@@ -110,7 +118,7 @@ class AdvancedCombineViewModel: ObservableObject {
                     self?.error = error.localizedDescription
                 }
             },receiveValue: { [weak self] value in
-                self?.data.append(contentsOf: value)
+                self?.data.append(value)
             })
             .store(in: &cancellables)
     }
