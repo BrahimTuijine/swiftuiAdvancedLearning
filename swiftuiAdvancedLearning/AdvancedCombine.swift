@@ -22,7 +22,7 @@ class AdvancedCombineDataService {
         let items : [Int] = Array(0..<11)
         
         for x in items.indices {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(x) + 1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
                 self.passThroughPublisher.send(items[x])
                 if x == items.last {
                     self.passThroughPublisher.send(completion: .finished)
@@ -65,13 +65,42 @@ class AdvancedCombineViewModel: ObservableObject {
             //.output(at: 5) // index of element
             //.output(in: 2..<4)
         
-        // Mathematic Operations
-        //.max()
-        //.min()
-        
-        
+            // Mathematic Operations
+            //.max()
+            //.min()
+            
+            // Filder / Reducing Operations
+            //.map({ String($0) })
+            //.tryMap({ int in
+            //   if int == 5 {
+            //      throw URLError(.badServerResponse)
+            //   }
+            // return String(int)
+            //})
+            //.compactMap({ int in
+            //    if int == 5 {
+            //       return nil // return nil instead of throw exception
+            //    }
+            //   return String(int)
+            //})
+            //.filter({$0 > 3 && $0 < 7 })
+            //.tryFilter()
+            //.removeDuplicates()
+            //.tryRemoveDuplicates(by:)
+            //.replaceNil(with: 5)
+            //.replaceEmpty(with: [])
+            //.replaceError(with: "this is an error")
+            //.scan(0, { existingValue, newValue in
+            //    return existingValue + newValue
+            //})
+            //.scan(0, +) => .scan(0, {$0 + $1} )
+            //.reduce(0, +) => .scan(0, {$0 + $1} ) return one Time after finish
+            //.allSatisfy({$0 < 50})
+            //.allSatisfy()
+            
         
             .map({ String($0) })
+            .collect() // transform data to array of data [data]
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .finished:
@@ -81,7 +110,7 @@ class AdvancedCombineViewModel: ObservableObject {
                     self?.error = error.localizedDescription
                 }
             },receiveValue: { [weak self] value in
-                self?.data.append(value)
+                self?.data.append(contentsOf: value)
             })
             .store(in: &cancellables)
     }
