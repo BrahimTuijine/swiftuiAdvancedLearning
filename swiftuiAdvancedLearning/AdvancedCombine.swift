@@ -13,18 +13,28 @@ class AdvancedCombineDataService {
 //    @Published var basicPublisher: String = ""
 //    let currentValuePublisher = CurrentValueSubject<Int, Error>("first publish")
     let passThroughPublisher = PassthroughSubject<Int, Error>()
+    let boolPublisher = PassthroughSubject<Bool, Error>()
+    let intPublisher = PassthroughSubject<Int, Error>()
     
     init() {
         publishFakeData()
     }
     private func publishFakeData() -> Void {
         
-        let items : [Int] = Array(0..<11)
+        let items : [Int] = Array(1..<11)
         
         for x in items.indices {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
                 self.passThroughPublisher.send(items[x])
-                if x == items.last {
+                
+                if (x > 4 && x < 8) {
+                    self.boolPublisher.send(true)
+                    self.intPublisher.send(999)
+                } else {
+                    self.boolPublisher.send(false)
+                }
+                
+                if x == items.indices.last {
                     self.passThroughPublisher.send(completion: .finished)
                 }
             }
@@ -106,7 +116,31 @@ class AdvancedCombineViewModel: ObservableObject {
             //.throttle(for: 10, scheduler: DispatchQueue.main, latest: true)
             //.retry(3)
             //.timeout(5, scheduler: DispatchQueue.main)
-                
+              
+            // multiple Publishers / Subscribers
+            //.combineLatest(dataService.boolPublisher, dataService.intPublisher)
+            //.compactMap({ $1 ? String($0) : "n/a" })
+            //.compactMap({ (int, bool, int2) in
+            //    if bool {
+            //        return String(int)
+            //   }
+            //   return "n/a"
+            //})
+            //.merge(with: dataService.intPublisher)
+            //.zip(dataService.boolPublisher, dataService.intPublisher)
+            //.map({ tuple in
+            //    return "\(tuple.0) \(tuple.1) \(tuple.2)"
+            //})
+            //.tryMap({ int in
+            //    if int == 5 {
+            //        throw URLError(.badServerResponse)
+            //    }
+            //    return int
+            //})
+            //.catch({ error in
+            //    return self.dataService.intPublisher
+            //})
+        
         
             .map({ String($0) })
             .sink(receiveCompletion: { [weak self] completion in
