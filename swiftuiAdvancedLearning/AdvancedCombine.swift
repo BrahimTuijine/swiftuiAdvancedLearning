@@ -65,6 +65,12 @@ class AdvancedCombineViewModel: ObservableObject {
             //.output(at: 5) // index of element
             //.output(in: 2..<4)
         
+        // Mathematic Operations
+        //.max()
+        //.min()
+        
+        
+        
             .map({ String($0) })
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
