@@ -11,6 +11,7 @@
 		FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */; };
 		FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */; };
 		FA2F81AF2CFDB1AC00ACF924 /* TimeLineViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F81AE2CFDB1AC00ACF924 /* TimeLineViewScreen.swift */; };
+		FA2F81B12CFDBA8800ACF924 /* CustomBindingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F81B02CFDBA8800ACF924 /* CustomBindingsScreen.swift */; };
 		FA359DC22CFD231F00822DA8 /* CloudKitUserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA359DC12CFD231F00822DA8 /* CloudKitUserScreen.swift */; };
 		FA45110E2CF466D300843FB7 /* AppNavBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45110D2CF466D300843FB7 /* AppNavBarScreen.swift */; };
 		FA4511102CF46C5600843FB7 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45110F2CF46C5600843FB7 /* CustomNavBarView.swift */; };
@@ -43,6 +44,7 @@
 		FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyScreen.swift; sourceTree = "<group>"; };
 		FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyScreen.swift; sourceTree = "<group>"; };
 		FA2F81AE2CFDB1AC00ACF924 /* TimeLineViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewScreen.swift; sourceTree = "<group>"; };
+		FA2F81B02CFDBA8800ACF924 /* CustomBindingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindingsScreen.swift; sourceTree = "<group>"; };
 		FA359DC12CFD231F00822DA8 /* CloudKitUserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserScreen.swift; sourceTree = "<group>"; };
 		FA359DC32CFD23C300822DA8 /* swiftuiAdvancedLearning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swiftuiAdvancedLearning.entitlements; sourceTree = "<group>"; };
 		FA45110D2CF466D300843FB7 /* AppNavBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBarScreen.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				FA6095CA2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift */,
 				FA2F81AE2CFDB1AC00ACF924 /* TimeLineViewScreen.swift */,
 				FAEE76182CFA0B7E00458B35 /* FutureScreen.swift */,
+				FA2F81B02CFDBA8800ACF924 /* CustomBindingsScreen.swift */,
 				FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */,
 				FAFC9E9E2CEB4F3A0032D9E1 /* ViewModifierScreen.swift */,
 				FABB644D2CF7D566008B2502 /* AdvancedCombine.swift */,
@@ -272,6 +275,7 @@
 				FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */,
 				FAF0C96D2CEDD1E7007ECB28 /* CustomCurveScreen.swift in Sources */,
 				FA9F2F322CF297960066C44F /* TabBarItemsPreferenceKey.swift in Sources */,
+				FA2F81B12CFDBA8800ACF924 /* CustomBindingsScreen.swift in Sources */,
 				FAEE76192CFA0B7E00458B35 /* FutureScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
