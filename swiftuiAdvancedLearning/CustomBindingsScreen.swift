@@ -7,6 +7,20 @@
 
 import SwiftUI
 
+extension Binding where Value == Bool {
+    
+    init(value: Binding<String?>) {
+        
+        self.init {
+            value.wrappedValue != nil
+        } set: { newValue in
+            if !newValue {
+                value.wrappedValue = nil
+            }
+        }
+    }
+}
+
 struct CustomBindingsScreen: View {
     
     @State private var title: String = "start"
@@ -34,17 +48,22 @@ struct CustomBindingsScreen: View {
 //                showError.toggle()
             }
         }
-        .alert(errorTitle ?? "this is error", isPresented: Binding(get: {
-           return errorTitle != nil
-        }, set: { newValue in
-            if !newValue {
-                errorTitle = nil
-            }
-        })) {
+        .alert(errorTitle ?? "this is error", isPresented: Binding(value: $errorTitle)) {
             Button("Ok") {
                
             }
         }
+//        .alert(errorTitle ?? "this is error", isPresented: Binding(get: {
+//            errorTitle != nil
+//        }, set: { newValue in
+//            if !newValue {
+//                errorTitle = nil
+//            }
+//        })) {
+//            Button("Ok") {
+//               
+//            }
+//        }
 //        .alert(errorTitle ?? "this is error", isPresented: $showError) {
 //            Button("Ok") {
 //                
