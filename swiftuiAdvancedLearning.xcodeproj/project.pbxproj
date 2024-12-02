@@ -10,6 +10,8 @@
 		FA1BE1722CEF383200BAD2FE /* ViewBuilderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */; };
 		FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */; };
 		FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */; };
+		FA2F81AF2CFDB1AC00ACF924 /* TimeLineViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F81AE2CFDB1AC00ACF924 /* TimeLineViewScreen.swift */; };
+		FA359DC22CFD231F00822DA8 /* CloudKitUserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA359DC12CFD231F00822DA8 /* CloudKitUserScreen.swift */; };
 		FA45110E2CF466D300843FB7 /* AppNavBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45110D2CF466D300843FB7 /* AppNavBarScreen.swift */; };
 		FA4511102CF46C5600843FB7 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45110F2CF46C5600843FB7 /* CustomNavBarView.swift */; };
 		FA4511122CF4708700843FB7 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4511112CF4708700843FB7 /* CustomNavBarContainerView.swift */; };
@@ -40,6 +42,9 @@
 		FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderScreen.swift; sourceTree = "<group>"; };
 		FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyScreen.swift; sourceTree = "<group>"; };
 		FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyScreen.swift; sourceTree = "<group>"; };
+		FA2F81AE2CFDB1AC00ACF924 /* TimeLineViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewScreen.swift; sourceTree = "<group>"; };
+		FA359DC12CFD231F00822DA8 /* CloudKitUserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserScreen.swift; sourceTree = "<group>"; };
+		FA359DC32CFD23C300822DA8 /* swiftuiAdvancedLearning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swiftuiAdvancedLearning.entitlements; sourceTree = "<group>"; };
 		FA45110D2CF466D300843FB7 /* AppNavBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBarScreen.swift; sourceTree = "<group>"; };
 		FA45110F2CF46C5600843FB7 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 		FA4511112CF4708700843FB7 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
@@ -88,6 +93,14 @@
 			path = PreferenceKeyScreens;
 			sourceTree = "<group>";
 		};
+		FA359DC02CFD230100822DA8 /* cloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				FA359DC12CFD231F00822DA8 /* CloudKitUserScreen.swift */,
+			);
+			path = cloudKit;
+			sourceTree = "<group>";
+		};
 		FA45110C2CF466B200843FB7 /* CustomNavBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +143,7 @@
 		FAFC9E8F2CEB4E8C0032D9E1 /* swiftuiAdvancedLearning */ = {
 			isa = PBXGroup;
 			children = (
+				FA359DC32CFD23C300822DA8 /* swiftuiAdvancedLearning.entitlements */,
 				FAFC9E902CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift */,
 				FAFC9EA02CEB56930032D9E1 /* ButtonStyleScreen.swift */,
 				FA54D2A22CEC9E290099E212 /* MatchedGeometryEffectScreen.swift */,
@@ -138,9 +152,11 @@
 				FA72731F2CF08E0C007FE28B /* CustomTabBar */,
 				FA1BE1752CEF839200BAD2FE /* PreferenceKeyScreens */,
 				FAF0C96E2CEDEE26007ECB28 /* AnimateableDataScreen.swift */,
+				FA359DC02CFD230100822DA8 /* cloudKit */,
 				FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */,
 				FA4511152CF4877900843FB7 /* UIViewRepresentableScreen.swift */,
 				FA6095CA2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift */,
+				FA2F81AE2CFDB1AC00ACF924 /* TimeLineViewScreen.swift */,
 				FAEE76182CFA0B7E00458B35 /* FutureScreen.swift */,
 				FA54D2A42CED54E90099E212 /* CustomShapesScreen.swift */,
 				FAFC9E9E2CEB4F3A0032D9E1 /* ViewModifierScreen.swift */,
@@ -239,6 +255,7 @@
 				FA45110E2CF466D300843FB7 /* AppNavBarScreen.swift in Sources */,
 				FAE491B62CEFF39000C54DBC /* ScrollViewPreferenceKeyScreen.swift in Sources */,
 				FA54D2A52CED54E90099E212 /* CustomShapesScreen.swift in Sources */,
+				FA2F81AF2CFDB1AC00ACF924 /* TimeLineViewScreen.swift in Sources */,
 				FAFC9E9F2CEB4F3A0032D9E1 /* ViewModifierScreen.swift in Sources */,
 				FA7273252CF0D493007FE28B /* CustomTabBarContainerView.swift in Sources */,
 				FA4511102CF46C5600843FB7 /* CustomNavBarView.swift in Sources */,
@@ -247,6 +264,7 @@
 				FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */,
 				FAEEC7722CF3700D00167F64 /* TabBarItem.swift in Sources */,
 				FA7273232CF08FC4007FE28B /* CustomTabBarView.swift in Sources */,
+				FA359DC22CFD231F00822DA8 /* CloudKitUserScreen.swift in Sources */,
 				FAFC9EA12CEB56930032D9E1 /* ButtonStyleScreen.swift in Sources */,
 				FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */,
 				FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */,
@@ -385,9 +403,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = swiftuiAdvancedLearning/swiftuiAdvancedLearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftuiAdvancedLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -400,7 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brahim.swiftuiAdvancedLearning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.swiftuiAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -413,9 +433,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = swiftuiAdvancedLearning/swiftuiAdvancedLearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftuiAdvancedLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -428,7 +450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brahim.swiftuiAdvancedLearning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.swiftuiAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
