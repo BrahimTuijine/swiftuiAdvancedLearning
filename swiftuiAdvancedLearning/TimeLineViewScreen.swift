@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct TimeLineViewScreen: View {
+    
+    @State private var startTime: Date = .now
+    @State private var pauseAnimation: Bool = false
+    
     var body: some View {
         VStack {
-            TimelineView(.animation(minimumInterval: 1, paused: false)) { context in
+            TimelineView(.animation(minimumInterval: 1, paused: pauseAnimation)) { context in
                 Text("\(context.date)")
                 Text("\(context.date.timeIntervalSince1970)")
                 
-                let secondes = Calendar.current.component(.second, from: context.date)
+                let secondes = context.date.timeIntervalSince(startTime)
                 Text("\(secondes)")
                 
                 Rectangle()
@@ -24,7 +28,12 @@ struct TimeLineViewScreen: View {
                     )
                     .animation(.bouncy, value: secondes)
             }
+            
+            Button(pauseAnimation ? "PLAY" : "PAUSE") {
+                pauseAnimation.toggle()
+            }
         }
+        .padding()
     }
 }
 
