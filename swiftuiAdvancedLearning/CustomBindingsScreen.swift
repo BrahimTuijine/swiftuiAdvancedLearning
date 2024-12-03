@@ -9,7 +9,7 @@ import SwiftUI
 
 extension Binding where Value == Bool {
     
-    init(value: Binding<String?>) {
+    init<T>(value: Binding<T?>) {
         
         self.init {
             value.wrappedValue != nil

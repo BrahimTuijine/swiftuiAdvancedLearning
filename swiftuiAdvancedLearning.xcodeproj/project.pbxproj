@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA091F642CFF4AE1000043F5 /* ErrorAlertScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091F632CFF4AE1000043F5 /* ErrorAlertScreen.swift */; };
 		FA1BE1722CEF383200BAD2FE /* ViewBuilderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */; };
 		FA1BE1742CEF7A4200BAD2FE /* PreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */; };
 		FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA091F632CFF4AE1000043F5 /* ErrorAlertScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertScreen.swift; sourceTree = "<group>"; };
 		FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderScreen.swift; sourceTree = "<group>"; };
 		FA1BE1732CEF7A4200BAD2FE /* PreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyScreen.swift; sourceTree = "<group>"; };
 		FA1BE1762CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyScreen.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				FA1BE1712CEF383200BAD2FE /* ViewBuilderScreen.swift */,
 				FA4511152CF4877900843FB7 /* UIViewRepresentableScreen.swift */,
 				FA6095CA2CF5D0CA005746C2 /* UIViewControllerRepresentableScreen.swift */,
+				FA091F632CFF4AE1000043F5 /* ErrorAlertScreen.swift */,
 				FA2F81AE2CFDB1AC00ACF924 /* TimeLineViewScreen.swift */,
 				FAEE76182CFA0B7E00458B35 /* FutureScreen.swift */,
 				FA2F81B02CFDBA8800ACF924 /* CustomBindingsScreen.swift */,
@@ -270,6 +273,7 @@
 				FA359DC22CFD231F00822DA8 /* CloudKitUserScreen.swift in Sources */,
 				FAFC9EA12CEB56930032D9E1 /* ButtonStyleScreen.swift in Sources */,
 				FAFC9E912CEB4E8C0032D9E1 /* swiftuiAdvancedLearningApp.swift in Sources */,
+				FA091F642CFF4AE1000043F5 /* ErrorAlertScreen.swift in Sources */,
 				FA1BE1772CEF842D00BAD2FE /* GeometryPreferenceKeyScreen.swift in Sources */,
 				FA1BE1722CEF383200BAD2FE /* ViewBuilderScreen.swift in Sources */,
 				FA54D2A12CEC922F0099E212 /* AnyTransitionScreen.swift in Sources */,
