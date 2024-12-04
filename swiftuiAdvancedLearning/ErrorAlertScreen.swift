@@ -102,7 +102,7 @@ struct ErrorAlertScreen: View {
                 "No Internet Connection"
             case .dataNotFound:
                 "No data"
-            case .serverError(errorMsg: let errorMsg):
+            case .serverError(errorMsg: _):
                 "server error"
             }
         }
