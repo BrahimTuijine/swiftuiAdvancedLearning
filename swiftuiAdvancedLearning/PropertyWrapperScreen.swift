@@ -30,6 +30,15 @@ struct MyFileManagerProperty: DynamicProperty {
         }
     }
     
+    var projectedValue: Binding<String> { // now we can use $ (binding value)
+        Binding {
+            wrappedValue
+        } set: { newValue in
+            wrappedValue = newValue
+        }
+
+    }
+    
     
     init(wrappedValue: String = "Starting text", _ key: String) {
         self.key = key
