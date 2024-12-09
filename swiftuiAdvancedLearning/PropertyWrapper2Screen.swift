@@ -70,12 +70,10 @@ struct FileManagerCodableProperty<T: Codable>: DynamicProperty {
     }
     
     
-    fileprivate init(_ key: KeyPath<FileManagerPaths, String>) {
-        
-        let keyPath = FileManagerPaths.instance[keyPath: key]
-        let key = keyPath
+    fileprivate init(_ key: KeyPath<FileManagerValues, FileManagerKeypaths<T>>) {
+        let keyPath = FileManagerValues.instance[keyPath: key]
+        let key = keyPath.key
         self.key = key
-        
         do {
             let savedValue = try Data(contentsOf: FileManager.documnetsPath(key))
             let data = try JSONDecoder().decode(T.self, from: savedValue)
@@ -106,19 +104,26 @@ private struct UserModel: Codable {
     let isPremium: Bool
 }
 
-private struct FileManagerPaths {
-    static let instance: FileManagerPaths = FileManagerPaths()
+
+private struct FileManagerKeypaths<T: Codable> {
+    let key: String
+    let type: T.Type
+}
+
+private struct FileManagerValues {
+    static let instance: FileManagerValues = FileManagerValues()
     
     private init() {}
     
-    let userProfile: String = "user_profile"
+    let userProfile = FileManagerKeypaths<UserModel>(key: "user_profile", type: UserModel.self)
     
 }
 
 struct PropertyWrapper2Screen: View {
     
 //    @FileManagerCodableProperty("user_profile") private var userProfile: UserModel?
-    @FileManagerCodableProperty(\.userProfile) private var userProfile: UserModel?
+//    @FileManagerCodableProperty(\.userProfile) private var userProfile: UserModel?
+    @FileManagerCodableProperty(\.userProfile) private var userProfile
     
     var body: some View {
         VStack {  
@@ -136,7 +141,7 @@ struct SomeBindingView: View {
     
     var body: some View {
         Button(userProfile?.name ?? "") {
-            userProfile = UserModel(name: "brahim", age: 24, isPremium: false)
+            userProfile = UserModel(name: "eya", age: 19, isPremium: true)
         }
     }
 }
