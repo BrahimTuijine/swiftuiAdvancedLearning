@@ -56,9 +56,26 @@ struct FileManagerCodableProperty<T: Codable>: DynamicProperty {
         )
     }
     
-    
     init(_ key: String) {
         self.key = key
+        do {
+            let savedValue = try Data(contentsOf: FileManager.documnetsPath(key))
+            let data = try JSONDecoder().decode(T.self, from: savedValue)
+            _value = State(wrappedValue: data)
+            print("Success read")
+        } catch {
+            _value = State(wrappedValue: nil)
+            print("Error read \(error)")
+        }
+    }
+    
+    
+    fileprivate init(_ key: KeyPath<FileManagerPaths, String>) {
+        
+        let keyPath = FileManagerPaths.instance[keyPath: key]
+        let key = keyPath
+        self.key = key
+        
         do {
             let savedValue = try Data(contentsOf: FileManager.documnetsPath(key))
             let data = try JSONDecoder().decode(T.self, from: savedValue)
@@ -89,10 +106,19 @@ private struct UserModel: Codable {
     let isPremium: Bool
 }
 
+private struct FileManagerPaths {
+    static let instance: FileManagerPaths = FileManagerPaths()
+    
+    private init() {}
+    
+    let userProfile: String = "user_profile"
+    
+}
+
 struct PropertyWrapper2Screen: View {
     
-    
-    @FileManagerCodableProperty("user_profile") private var userProfile: UserModel?
+//    @FileManagerCodableProperty("user_profile") private var userProfile: UserModel?
+    @FileManagerCodableProperty(\.userProfile) private var userProfile: UserModel?
     
     var body: some View {
         VStack {  
@@ -110,7 +136,7 @@ struct SomeBindingView: View {
     
     var body: some View {
         Button(userProfile?.name ?? "") {
-            userProfile = UserModel(name: "bilel", age: 25, isPremium: true)
+            userProfile = UserModel(name: "brahim", age: 24, isPremium: false)
         }
     }
 }
