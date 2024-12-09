@@ -43,12 +43,17 @@ struct FileManagerCodableProperty<T: Codable>: DynamicProperty {
     }
     
     var projectedValue: Binding<T?> { // now we can use $ (binding value)
-        Binding {
-            wrappedValue
-        } set: { newValue in
-            wrappedValue = newValue
-        }
-
+//        Binding {
+//            wrappedValue
+//        } set: { newValue in
+//            wrappedValue = newValue
+//        }
+        
+        // same code
+        Binding(
+            get: { wrappedValue },
+            set: { wrappedValue = $0 }
+        )
     }
     
     
@@ -90,15 +95,22 @@ struct PropertyWrapper2Screen: View {
     @FileManagerCodableProperty("user_profile") private var userProfile: UserModel?
     
     var body: some View {
-        VStack {
-            Text(userProfile?.name ?? "")
-            
-            Button("Save user profile") {
-                userProfile = UserModel(name: "brahim", age: 24, isPremium: true)
-            }
+        VStack {  
+            SomeBindingView(userProfile: $userProfile)
         }
         .onAppear {
             print(NSHomeDirectory())
+        }
+    }
+}
+
+struct SomeBindingView: View {
+    
+    @Binding fileprivate var userProfile: UserModel?
+    
+    var body: some View {
+        Button(userProfile?.name ?? "") {
+            userProfile = UserModel(name: "bilel", age: 25, isPremium: true)
         }
     }
 }
