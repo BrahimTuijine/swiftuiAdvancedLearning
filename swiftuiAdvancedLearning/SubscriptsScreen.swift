@@ -25,6 +25,22 @@ extension Array where Element == String {
     
 }
 
+struct Customer {
+    let name: String
+    let address: String
+    
+    subscript(value: String) -> String? {
+        switch value {
+        case "name":
+            return name
+        case "address":
+            return address
+        default:
+            return nil
+        }
+    }
+}
+
 struct SubscriptsScreen: View {
     
     @State private var items: [String] = ["one", "two", "three"]
@@ -39,9 +55,8 @@ struct SubscriptsScreen: View {
             Text("SELECTED: \(selectedItem ?? "none")")
         }
         .onAppear {
-            let value = "one"
-            
-            selectedItem = items[value]
+            let customer = Customer(name: "brahim", address: "el alia")
+            selectedItem = customer["name"]
         }
     }
 }
